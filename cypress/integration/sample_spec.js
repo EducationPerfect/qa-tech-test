@@ -30,22 +30,38 @@ describe('Todo list test', () => {
 
     it('should mark a todo as completed', () => {
         // Mark "Item 3" as completed
+        cy.contains("Item 3").parent().find('input[type=checkbox]').check().should('be.checked');
+        // Verify the element is checked
+        cy.contains('Item 3').parents('li').should('have.class', 'completed');
     });
 
     it('should toggle all items', () => {
         // ".toggle-all" should mark all items as completed
+        cy.get('[type="checkbox"]').check().should('be.checked');
         // and unmark all items when clicked a second time
+        cy.get('[type="checkbox"]').uncheck().should('not.be.checked');
     });
 
     it('should display correct remaining items', () => {
         // "x items left" should update correctly
+        cy.contains("items left").should('contain.text', '2 items left');
     });
 
     it('should clear completed items', () => {
         // "Clear completed" removes completed items
+        cy.contains("Clear completed").click();
+        // "verify item 2 is not visible anymore
+        cy.get("li.todo").each((todo) => {
+            cy.wrap(todo).should("not.contain.text", "Item 2")
+        });
     });
 
     it('should delete an item', () => {
         // Delete an item whether it is completed or not
-    });
+        cy.contains("Item 1").parent().find('.destroy').click({force: true})
+        // Verify first item is deleted
+        cy.get("li.todo").each((todo) => {
+            cy.wrap(todo).should("not.contain.text", "Item 1")
+        });
+     });
 })
