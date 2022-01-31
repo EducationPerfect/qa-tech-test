@@ -1,0 +1,5 @@
+Test plan for TODOS app
+
+Scenario: should enter a new todo
+Type: Automation test
+Outline: As a user of TODOS, I should be able to add a new todo by entering text on the "What needs to be done?" input and pressing the [enter] key.
