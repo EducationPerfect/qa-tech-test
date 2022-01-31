@@ -11,26 +11,26 @@ We encourage applicants to change whatever they see fit in this project to impro
 
 Here are some instructions that outline how to start the application and how to get the tests running:
 
-#### Install NodeJS
+### Install NodeJS
 Download and install the [latest NodeJS version](https://nodejs.org/en/)
 
-#### Instal yarn
+### Instal yarn
 It is recommended to install Yarn through the npm package manager, which comes bundled with Node.js when you install it on your system.
 
 Once you have npm installed you can run the following both to install and upgrade Yarn:
 
 `npm install --global yarn`
-#### Install node dependencies
+### Install node dependencies
 Open the terminal and cd into the project root, then run:
 
 `yarn`
 
-#### Start the app
+### Start the app
 After dependencies are installed you can serve the app locally by running:
 
 `yarn start`
 
-#### Run Cypress tests
+### Run Cypress tests
 To open the cypres GUI, open a second terminal and run:
 
 `yarn run cy:open`
