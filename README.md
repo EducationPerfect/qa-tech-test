@@ -10,4 +10,5 @@ Open Terminal:
 ## Run Cypress tests
 New Terminal:
 `yarn run cy:open`
-The run the tests by clicking on the desired spec sheet
+
+Then run the tests by clicking on the desired spec sheet
