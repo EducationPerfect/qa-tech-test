@@ -5,7 +5,7 @@ As part of the technical exam you will need to do mainly two things:
 - Provide supporting documentation
 
 ## Automation (Cypress)
-The `sample_spec.js` file contains a few scenarios already outlined. The first two are already written, you will need to fill in the rest. Each test describes what it is meant to be testing, plus it also has some useful comments that hint the type of solution we are expecting.
+The `sample_spec.js` file contains a few scenarios already outlined. The first two are already written, you will need to fill in the rest. Each test describes what it is meant to be testing.
 
 We encourage applicants to change whatever they see fit in this project to improve the quality of either the application code or the tests themselves. Feel free to edit the tests setup or even the HTML code in the `index.html` file if you think it provides a better solution.
 
