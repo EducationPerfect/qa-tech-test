@@ -6,7 +6,7 @@ describe('Todo list test', () => {
             {"title": "Item 3", "completed": false}];
 
         cy.loadData(todoItems);
-        cy.visit('http://127.0.0.1:8080/');
+        cy.visit("/");
     });
 
     it('should enter a new todo', () => {
